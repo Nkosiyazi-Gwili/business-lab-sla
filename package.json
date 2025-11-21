@@ -1,0 +1,30 @@
+{
+  "name": "business-lab-sla",
+  "version": "1.0.0",
+  "description": "Business Lab SLA Management System - Full Stack Application",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "generate-data": "cd backend && npm run generate-data",
+    "test-data": "cd backend && npm run test"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": [
+    "sla",
+    "business",
+    "management",
+    "fullstack",
+    "mongodb",
+    "express",
+    "react",
+    "nextjs"
+  ],
+  "author": "Business Lab",
+  "license": "MIT"
+}
